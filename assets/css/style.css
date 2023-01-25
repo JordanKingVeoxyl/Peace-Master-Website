@@ -2,10 +2,18 @@
 
 body {
     font-family: lato, sans-serif;
+    color: #3a3a3a;
 }
 
 * {
     margin: 0;
     padding: 0;
     border: none;
+}
+
+h1, h2 {
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525
 }
