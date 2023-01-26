@@ -14,7 +14,7 @@ body {
 * {
     margin: 0;
     padding: 0;
-    border: none;
+    border: 0;
 }
 
 h1 {
@@ -85,7 +85,7 @@ h1, h2 {
     position: relative;
 }
 
-/* creates the level of zoom for hero image */
+/* Creates the level of zoom for hero image */
 
 @keyframes hero-zoom {
     from{
@@ -151,24 +151,26 @@ h1, h2 {
 
 .info-box h1 {
     margin: 0;
+    color: red;
 }
 
 .info-box p {
     margin-right: 15px;
     margin-left: 15px;
+    font-size: 120%;
 }
 
 /* History section */
 
 #history {
-    height: 900px;
+    height: 800px;
     width: 100%;
     overflow: hidden;
     position: relative;
     font-weight: 1000;
 }
 
-  .container {  display: grid;
+  .history-grid {  display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -275,3 +277,102 @@ h1, h2 {
   
 /* Meditation techniques page */
 
+#techniques-section {
+    height: 1350px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.techniques-grid {  
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px; 
+    grid-auto-flow: row;
+  }
+
+  .techniques-grid h3 {
+    color:rgb(255, 0, 0);
+
+  }
+
+  .techniques-grid p, .techniques-grid h3 {
+    padding: 0.5rem;
+  }
+  
+  .cpr-meditation, .three-part-breathing, .inhale-six-exhale-six, 
+  .body-scan-meditation,  .square-breathing, .four-inhale-eight-exhale, 
+  .walking-meditation, .moving-meditation, .self-inquiry-meditation,
+  .mindfulness-meditation, .guided-meditation, .mantra-meditation,
+  .candle-meditation, .smile-meditation {
+    background-color: rgba(103, 143, 204);
+  }
+  
+  .inhale-six-exhale-six { grid-area: 3 / 1 / 4 / 2; }
+  
+  .body-scan-meditation { grid-area: 3 / 2 / 4 / 3; }
+  
+  .square-breathing { grid-area: 4 / 1 / 5 / 2; }
+  
+  .four-inhale-eight-exhale { grid-area: 4 / 2 / 5 / 3; }
+  
+  .walking-meditation { grid-area: 5 / 1 / 6 / 2; }
+  
+  .moving-meditation { grid-area: 5 / 2 / 6 / 3; }
+  
+  .self-inquiry-meditation { grid-area: 6 / 1 / 7 / 2; }
+  
+  .mindfulness-meditation { grid-area: 6 / 2 / 7 / 3; }
+  
+  .guided-meditation { grid-area: 7 / 1 / 8 / 2; }
+  
+  .mantra-meditation { grid-area: 7 / 2 / 8 / 3; }
+  
+  .candle-meditation { grid-area: 8 / 1 / 9 / 2; }
+  
+  .smile-meditation { grid-area: 8 / 2 / 9 / 3; }
+  
+
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    #cover-text {
+        left: 0;
+    }
+}
+
+/* Footer */
+
+footer {
+    height: 150px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+iframe { 
+    display: block; 
+    margin: auto; 
+    padding-bottom: 30px;
+  } 
