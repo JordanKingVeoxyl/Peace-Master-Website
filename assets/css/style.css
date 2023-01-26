@@ -1,3 +1,6 @@
+
+/* Imported Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@300&display=swap');
 
 body {
@@ -5,6 +8,8 @@ body {
     font-weight: 300px;
     color: #3a3a3a;
 }
+
+/* Setting the Default of Every Element */
 
 * {
     margin: 0;
@@ -18,6 +23,8 @@ h1, h2 {
     letter-spacing: 4px;
     color: #252525;
 }
+
+/* Logo */
 
 #logo {
     float: left;
@@ -45,6 +52,8 @@ h1, h2 {
     color: inherit;
 }
 
+/* Black bar underneath each menu item when hovering or on a selected website */
+
 #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
 }
@@ -53,10 +62,13 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
+/* Hero image */
+
 #hero-image {
     height: 600px;
     width: 100%;
     background: url('../images/man-meditating-with-laptop.webp') no-repeat center center;
+    /* animates zoom effect on loading page */ 
     animation-name: hero-zoom;
     animation-duration: 10s;
     animation-fill-mode: forwards;
@@ -69,6 +81,8 @@ h1, h2 {
     position: relative;
 }
 
+/* creates the level of zoom for hero image */
+
 @keyframes hero-zoom {
     from{
     transform: scale(1);
@@ -77,6 +91,8 @@ h1, h2 {
     transform: scale(1.1);
     }
 }
+
+/* Hero cover */
 
 #hero-text, #cover-text h2 {
     color: #fff;
@@ -100,4 +116,27 @@ h1, h2 {
     right: 170px;
     position: absolute;
     }
+
+
+
+    #div1 {
+        padding-top: 30px;
+        width: 50%;
+        float: left;
+        background-color: blue;
+    }
+
+    #div2 {
+        padding-top: 30px;
+        width: 50%;
+        float: right;
+        background-color: red;
+    }
+
+    /* #div3 {
+        padding-top: 30px;
+        width: 50%;
+        height: 100%;
+        background-color: green;
+    } */
 
