@@ -278,7 +278,7 @@ h1, h2 {
 /* Meditation techniques page */
 
 #techniques-section {
-    height: 1350px;
+    height: 2050px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -334,22 +334,6 @@ h1, h2 {
   .smile-meditation { grid-area: 8 / 2 / 9 / 3; }
   
 
-/* For medium screen sizes from 950px wide and down */
-@media screen and (max-width: 950px) {
-
-    #menu {
-        clear: left;
-        float: left;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        line-height: 25px;
-    }
-
-    #cover-text {
-        left: 0;
-    }
-}
-
 /* Footer */
 
 footer {
@@ -375,4 +359,23 @@ iframe {
     display: block; 
     margin: auto; 
     padding-bottom: 30px;
+    padding-top: 20px;
   } 
+
+/* Media queries */
+
+  /* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    #cover-text {
+        left: 0;
+    }
+}
