@@ -17,6 +17,10 @@ body {
     border: none;
 }
 
+h1 {
+    text-align: center;
+}
+
 h1, h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
@@ -115,28 +119,45 @@ h1, h2 {
     bottom: 50px;
     right: 170px;
     position: absolute;
-    }
+}
 
+/* Club Ethos */
 
+#club-ethos {
+    font-size: 150%;
+}
 
-    #div1 {
-        padding-top: 30px;
-        width: 50%;
-        float: left;
-        background-color: blue;
-    }
+.section {
+    background-color: rgba(103, 143, 204);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+    
+.section img {
+    height: 250px;
+    width: 250px;
+}
 
-    #div2 {
-        padding-top: 30px;
-        width: 50%;
-        float: right;
-        background-color: red;
-    }
+.section h1 {
+    margin: 0;
+}
 
-    /* #div3 {
-        padding-top: 30px;
-        width: 50%;
-        height: 100%;
-        background-color: green;
-    } */
+.section p {
+    margin-right: 15px;
+}
 
+#club-ethos h1 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#history {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
