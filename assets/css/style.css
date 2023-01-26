@@ -5,8 +5,8 @@
 
 body {
     font-family: lato, sans-serif;
-    font-weight: 300px;
-    color: #3a3a3a;
+    font-weight: 500px;
+    color: #242323;
 }
 
 /* Setting the Default of Every Element */
@@ -121,43 +121,157 @@ h1, h2 {
     position: absolute;
 }
 
-/* Club Ethos */
+/* Banner */
 
-#club-ethos {
+#banner {
     font-size: 150%;
 }
 
-.section {
-    background-color: rgba(103, 143, 204);
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    width: 60%;
-    margin: auto;
-    margin-bottom: 1rem;
-}
-    
-.section img {
-    height: 250px;
-    width: 250px;
-}
-
-.section h1 {
-    margin: 0;
-}
-
-.section p {
-    margin-right: 15px;
-}
-
-#club-ethos h1 {
+#banner h1 {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
+/* Info boxes */
+
+.info-box {
+    background-color: rgba(103, 143, 204);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+    
+.info-box img {
+    height: 250px;
+    width: 250px;
+}
+
+.info-box h1 {
+    margin: 0;
+}
+
+.info-box p {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* History section */
+
 #history {
-    height: 600px;
+    height: 900px;
     width: 100%;
     overflow: hidden;
     position: relative;
+    font-weight: 1000;
 }
+
+  .container {  display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". Tantra ."
+      "Mantra Yantra Yajna"
+      ". Yoga ."
+      "Bhaktti Raja Karma"
+      ". Yama ."
+      ". Niyamas ."
+      ". Asana ."
+      ". Pranayama ."
+      ". Pratyahara ."
+      ". Dharana ."
+      ". Dhyana ."
+      ". Samadhi ."
+      ". Buddha ."
+      ". Buddhism ."
+      "Theravada Mahayana Vajrayana"
+      ". Zen ."
+      ". Mindfulness .";
+  }
+  
+  .Tantra { 
+    grid-area: Tantra; 
+    background-color: rgba(255, 0, 0, 0.800);
+}
+  
+.Mantra, .Yantra, .Yajna {
+    background-color: rgba(255, 0, 0, 0.500);
+}
+
+.Bhaktti, .Raja, .Karma {
+    background-color: rgba(255, 255, 0, 00.500)
+}
+
+.Yama, .Niyamas, .Asana, .Pranayama, .Pratyahara, .Dharana, .Dhyana, .Samadhi, .Buddha, .Buddhism {
+    background-color: rgba(255, 166, 0, .600);
+}
+
+.Theravada, .Mahayana, .Vajrayana {
+    background-color: rgba(0, 0, 255, 0.568);
+}
+
+  .Mantra { grid-area: Mantra; }
+  
+  .Yantra { grid-area: Yantra; }
+  
+  .Yajna { grid-area: Yajna; }
+  
+  .Yoga { 
+    grid-area: Yoga;
+    background-color: yellow;
+}
+  
+  .Raja { grid-area: Raja;
+    background-color: yellow; }
+  
+  .Bhaktti { grid-area: Bhaktti; }
+  
+  .Karma { grid-area: Karma; }
+  
+  .Yama { grid-area: Yama; }
+  
+  .Niyamas { grid-area: Niyamas; }
+  
+  .Asana { grid-area: Asana; }
+  
+  .Pranayama { grid-area: Pranayama; }
+  
+  .Pratyahara { grid-area: Pratyahara; }
+  
+  .Dharana { grid-area: Dharana; }
+  
+  .Dhyana { grid-area: Dhyana; }
+  
+  .Samadhi { grid-area: Samadhi; }
+  
+  .Buddha { grid-area: Buddha; }
+  
+  .Buddhism { 
+    grid-area: Buddhism;
+    background-color: rgba(0, 47, 255, 0.8);
+}
+  
+  .Theravada { grid-area: Theravada; }
+  
+  .Mahayana { grid-area: Mahayana; }
+  
+  .Vajrayana { grid-area: Vajrayana; }
+  
+  .Zen { grid-area: Zen;
+    background-color: rgba(0, 180, 0, 0.800);
+}
+  
+  .Mindfulness { 
+    grid-area: Mindfulness; 
+    background-color: rgba(55, 172, 137, 0.842);
+}
+  
+/* Meditation techniques page */
+
