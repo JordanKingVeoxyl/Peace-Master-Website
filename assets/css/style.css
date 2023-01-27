@@ -391,10 +391,35 @@ iframe {
         margin-right: 15px;
         margin-left: 15px;
         font-size: 100%;
+        text-align: center;
     }
 
     .info-box img {
         height: 50%;
         width: 20%;
+        float: initial;
     }
+}
+
+/* For small screen sizes below 800px width */
+@media screen and (max-width: 800px) {
+
+    .info-box p {
+        font-size: 100%;
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 0px;
+        
+    }
+
+    .info-box {
+        background-color: rgba(103, 143, 204);
+        display: flex;
+        
+        padding: 40px;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    
 }
