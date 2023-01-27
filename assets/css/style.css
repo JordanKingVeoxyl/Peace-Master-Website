@@ -378,4 +378,23 @@ iframe {
     #cover-text {
         left: 0;
     }
+
+    #techniques-section {
+        height: 2300px;
+    }
+
+    #history {
+        height: 900px;
+    }
+
+    .info-box p {
+        margin-right: 15px;
+        margin-left: 15px;
+        font-size: 100%;
+    }
+
+    .info-box img {
+        height: 50%;
+        width: 20%;
+    }
 }
